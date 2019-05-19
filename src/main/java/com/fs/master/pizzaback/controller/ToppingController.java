@@ -26,6 +26,13 @@ public class ToppingController {
         }
     }
 
+    @RequestMapping(value = "/toppings", method = RequestMethod.GET, produces = "application/json")
+    @ResponseBody
+    public ResponseEntity getToppings() {
+        Iterable<Topping> toppings = repository.findAll();
+        return new ResponseEntity<>(toppings, HttpStatus.OK);
+    }
+
     @RequestMapping(value = "/toppings/{id}", method = RequestMethod.GET, produces = "application/json")
     @ResponseBody
     public ResponseEntity findToppingById(@PathVariable("id") long id) {
