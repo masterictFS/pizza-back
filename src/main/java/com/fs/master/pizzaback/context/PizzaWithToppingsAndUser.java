@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.io.Serializable;
 
-public class PizzaWithToppings implements Serializable {
+public class PizzaWithToppingsAndUser implements Serializable {
     private static final long serialVersionUID = -2245310097297477562L;
 
     @JsonProperty("name")
@@ -13,11 +13,15 @@ public class PizzaWithToppings implements Serializable {
     @JsonProperty("toppings_ids")
     private long[] toppingsIds;
 
-    protected PizzaWithToppings(){}
+    @JsonProperty("user_id")
+    private long userId;
 
-    public PizzaWithToppings(String name, long[] toppingsIds) {
+    protected PizzaWithToppingsAndUser(){}
+
+    public PizzaWithToppingsAndUser(String name, long[] toppingsIds, long userId) {
         this.name = name;
         this.toppingsIds = toppingsIds;
+        this.userId = userId;
     }
 
     public String getName() {
@@ -34,5 +38,13 @@ public class PizzaWithToppings implements Serializable {
 
     public void setToppingsIds(long[] toppingsIds) {
         this.toppingsIds = toppingsIds;
+    }
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 }

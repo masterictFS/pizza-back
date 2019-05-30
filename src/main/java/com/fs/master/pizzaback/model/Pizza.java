@@ -16,6 +16,9 @@ public class Pizza implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @Column(name = "user_id")
+    private long userId;
+
     @Column(name = "name")
     private String name;
 
@@ -32,6 +35,7 @@ public class Pizza implements Serializable {
         this.name = name;
         this.toppings = new HashSet<>();
         this.prices = new HashSet<>();
+        this.userId = -1;
     }
 
     public long getId() {
@@ -64,6 +68,14 @@ public class Pizza implements Serializable {
 
     public void setPrices(Set<Price> prices) {
         this.prices = prices;
+    }
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 
     public boolean addPrice(Price price) {

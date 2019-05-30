@@ -1,6 +1,6 @@
 package com.fs.master.pizzaback.controller;
 
-import com.fs.master.pizzaback.context.PizzaWithToppings;
+import com.fs.master.pizzaback.context.PizzaWithToppingsAndUser;
 import com.fs.master.pizzaback.model.Pizza;
 import com.fs.master.pizzaback.model.PizzaSize;
 import com.fs.master.pizzaback.model.Price;
@@ -23,12 +23,13 @@ public class PizzaController {
     @Autowired
     PriceRepository priceRepository;
 
-    // TODO should this be a PUT?
     @RequestMapping(value = "/pizzas", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
-    public ResponseEntity postPizza(@RequestBody PizzaWithToppings pizzaWithToppings) {
-        String name = pizzaWithToppings.getName();
-        long[] toppingsIds = pizzaWithToppings.getToppingsIds();
+    public ResponseEntity postPizza(@RequestBody PizzaWithToppingsAndUser pizzaWithToppingsAndUser) {
+        String name = pizzaWithToppingsAndUser.getName();
+        long[] toppingsIds = pizzaWithToppingsAndUser.getToppingsIds();
+        long userId = pizzaWithToppingsAndUser.getUserId();
+
         if (name != null && !name.isEmpty() && toppingsIds != null && toppingsIds.length != 0) {
             Pizza pizza = new Pizza(name);
 
@@ -38,6 +39,8 @@ public class PizzaController {
                     pizza.getToppings().add(topping);
                 }
             }
+
+            pizza.setUserId(userId);
 
             pizzaRepository.save(pizza);
             return new ResponseEntity<>(pizza, HttpStatus.CREATED);
@@ -50,7 +53,15 @@ public class PizzaController {
     @RequestMapping(value = "/pizzas", method = RequestMethod.GET, produces = "application/json")
     @ResponseBody
     public ResponseEntity getPizzas() {
-        Iterable<Pizza> pizzas = pizzaRepository.findAll();
+        // default pizzas have userId = -1
+        Iterable<Pizza> pizzas = pizzaRepository.findByUserId(-1);
+        return new ResponseEntity<>(pizzas, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/user_pizzas/{user_id}", method = RequestMethod.GET, produces = "application/json")
+    @ResponseBody
+    public ResponseEntity getUserPizzas(@PathVariable("user_id") long user_id) {
+        Iterable<Pizza> pizzas = pizzaRepository.findByUserId(user_id);
         return new ResponseEntity<>(pizzas, HttpStatus.OK);
     }
 
