@@ -1,0 +1,124 @@
+4 formaggi; Mozzarella, Gorgonzola, Toma, Fontal; 5.50, 7, 13
+4 stagioni; Pomodoro, Mozzarella, Funghi, Carciofini, Olive, Prosciutto cotto; 5.50, 7, 13
+Alex; Noci, Prosciutto cotto, Mozzarella di bufala; 5.50, 7, 13
+Alfa; Mozzarella, Salsiccia, Friarielli, Guanciale, Olive taggiasche, Cipolle; 8.50, 10, 19
+Amatriciana; Pomodoro, Mozzarella, Guanciale, Cipolle, Pecorino; 5.50, 7, 13
+Andrea; Mozzarella, Ricotta, Prosciutto cotto, Rucola; 5.50, 7, 13
+Appetitosa; Mozzarella, Pomodorini, Scamorza affumicata, Salame piccante, Olive nere; 6.50, 8, 15
+Atomica; Pomodoro, Mozzarella, Tomini piccanti, Olive verdi piccanti; 5.50, 7, 13
+Bella napoli; Pomodoro, Mozzarella fior di latte, Basilico fresco; 4.50, 6, 11
+Benny; Pomodoro, Mozzarella, Prosciutto crudo, Gorgonzola; 5.50, 7, 13
+Beppe; Pomodoro, Mozzarella, Philadelphia, Patatine; 5, 6.50, 12
+Biancaneve; Mozzarella, Prosciutto cotto; 4.50, 6, 11
+Bismark; Pomodoro, mozzarella, Prosciutto cotto, Uovo; 5.50, 7, 13
+Bomba; Pomodoro, Mozzarella, Peperoni, Salame piccante, Olive nere; 5.50, 7, 13
+Bontà; Pomodoro, Mozzarella, Olive verdi piccanti, Patatine, Salame piccante; 5.50, 7, 13
+Boscaiola; Mozzarella, Funghi, Salsiccia, Prosciutto cotto; 6, 7.50, 14
+Bufala; Pomodoro, Mozzarella di bufala; 4.50, 6, 11
+Bufalina; Pomodorini, Mozzarella di bufala; 6, 6.50, 12
+Calamari; Pomodoro, Mozzarella, Calamari; 5.50, 7, 13
+Calamari e gamberetti; Pomodoro, Mozzarella, Calamari, gamberetti; 6, 7.50, 14
+Capricciosa; Pomodoro, Mozzarella, Carciofini, Proisciutto cotto, Funghi; 5.50, 7, 13
+Carbonara; Mozzarella, Pancetta, Panna, Uovo; 5.50, 7, 13
+Casereccia; Pomodoro, Mozzarella, Patatine, Salsiccia; 5.50, 7, 13
+Chiara; Mozzarella, Pomodorini, Gorgonzola, Radicchio; 6.50, 8, 15.00
+Cima; Mozzarella, Cime di rapa, Salsiccia; 5.50, 7, 13
+Cinzia; Pomodoro, Mozzarella, Acciughe, Pomodorini a freddo, Rucola, Grana; 5.50, 7, 13
+Claudio;  Pomodoro, Mozzarella, Prosciutto cotto, Salame piccante, Olive verdi piccanti, Patatine, Taleggio; 6.50, 8, 15
+Contadina; Pomodoro, Mozzarella, Verdure stufate, Salsiccia, Pecorino; 6.50, 8, 15
+Cristian;  Pomodoro, Mozzarella, Olive taggiasche, Porcini, Salsiccia; 6.50, 8, 12
+Curiosa;  Mozzarella, Prosciutto cotto, Panna; 5.50, 7, 13
+Dadà;  Mozzarella, Prosciutto Crudo, Rucola, Scaglie di grana; 6, 7.50, 14
+Damiano;  Mozzarella, prosciutto, Panna, Mais; 5.50, 7, 13
+Daniele; Mozzarella, Fontal, Toma, Gorgonzola, Pere, Speck; 6.50, 8, 15
+Delicata;  Pomodorini, Stracchino, Rucola; 5.50, 7, 13
+Deliziosa; Pomodoro, Mozzarella, Tonno, Carciofi, Olive nere; 5.50, 7, 13
+Diavola; Pomodoro, Mozzarella, Salame piccante; 4.50, 6, 11
+Ecio; Pomodoro, Mozzarella, Peperoni fritti, Salsiccia, Grana a freddo; 5.50, 7, 13
+Elisa; Pomodorini, Mozzarella, Olive taggiasche, Rucola; 5.50, 7, 13
+Fabio; Pomodoro, Mozzarella, Guanciale, Olive verdi piccanti, Patatine; 5.50, 7, 13
+Fabione; Doppio impasto, Pomodoro, Salciccia, Noci, Prosciutto cotto, Mozzarella, Patate, Grana; 8.5, 10, 19
+Fabrizio; Mozzarella, Pomodorini, Olive verdi, Lardo, Patatine, Grana, Rucola; 7.5, 9, 17
+Fantasia; Pomodoro, Olive, Capperi, Salsiccia, Mozzarella di bufala a freddo; 6, 7.5, 14
+Federica; Pomodoro, Mozzarella, Salciccia, Peperoni, Radicchio, Grana; 7, 8.5, 16
+Federico; Pomodoro, Olive verdi piccanti, Mozzarella di bufala a freddo; 5, 6.5, 12
+Francesco; Mozzarella, Pancetta, Patatine, Olive verdi, Grana; 6, 7.5, 14
+Franco; Pomodoro, Mozzarella, Salame piccante, Olive verdi piccanti, Peperoni, Cipolle; 7, 8.5, 16
+Frutti di mare;  Pomodoro, Mozzarella, Frutti di mare; 5.50, 7, 13
+Gabry; Pomodorini, Olive taggiasche, Mozzarella di bufala affumicata; 7, 8.5, 16
+Galli; Pomodorini, Acciughe, Mozzarella di bufala affumicata, Rucola, Grana; 7, 8.6, 16
+Genovese; Pomodorini, Stracchino, Pesto, Grana; 5.50, 7, 13
+Gianotti; Pomodoro, Mozzarella di bufala, Porcini, Salame piccante, Olive verdi piccanti; 7, 8.5, 16
+Gilberto; Pomodoro, Mozzarella, Aglio, Acciughe, Verdure grigliate; 7, 8.5, 16
+Giuseppe; Pomodoro, Mozzarella, Prosciutto cotto, Fontina, Salame piccante, Cipolle, Olive verdi piccanti; 6.5, 8, 15
+Golosa; Pomodoro, Scamorza affumicata, Salsiccia, Patatine; 6, 7.5, 14
+Greca; Pomodoro, Mozzarella, Olive; 4.5, 6, 11
+Gustosa; Mozzarella, Pomodorini, Lardo, Scaglie di grana, Rucola; 6, 7.5, 14
+Inferno; Pomodoro, Mozzarella, Salame piccante, Olive verdi piccanti,Tomini, Salsa inferno; 6.5, 8, 15
+Ivan; Pomodoro, Mozzarella, Olive taggiasche, Gorgonzola, Soppressata; 6, 7.5, 15
+Jhonny; Pomodoro, Mozzarella, Salame milano, Taleggio; 5.50, 7, 13
+Jody; Pomodoro, Mozzarella fiordilatte, Basilico, Mocetta a freddo, Rucola; 6.5, 8, 15
+Lilla; Pomodoro, Mozzarella, Verdure grigliate, Salsiccia, Philadelphia, Rucola; 7.5, 9, 17
+Livio; Pomodorini, Olive verdi, Taleggio, Salame milano, Mozzarella di bufala; 6.5, 8, 15
+Lorenzo; Mozzarella, Gorgonzola, Noci, Radicchio, Pomodorini; 6.5, 8, 15
+Lory 2; Mozzarella, Gorgonzola, Noci, Olive nere, Salsina piccante, Rucola; 6, 7.5, 14
+Lory 3; Pomodoro, Mozzarella, Pesto, Olive taggiasche, Basilico; 6, 8, 15
+Luca; Pomodoro, Mozzarella, Salame milano, Olive nere, Patatine; 5.5, 7, 13
+Luciano; Pomodoro, Mozzarella, Soppressata; 4.5, 6, 11
+Ludos; Pomodorini, Stracchino, Tonno; 6.5, 8, 15
+Magister; Pomodoro, Mozzarella, Salame milano, Cima, Peperoni, Pecorino; 7, 8.5, 16
+Margherita; Pomodoro, Mozzarella; 4, 5, 9
+Mari e monti; Pomodoro, Mozzarella, Frutti di mare, Funghi; 6, 7.5, 14
+Marinara; Pomodoro, Aglio; 4, 5, 9
+Massimo; Pesto, Pomodorini, Capperi, Stracchino, Rucola; 6.5, 8, 15
+Mattia; Pancetta, Cipolle, Melanzane fritte, Mozzarella di bufala a freddo; 7.5, 9, 17
+Modesta; Pomodoro, Mozzarella di bufala, Salsiccia; 5.5, 7, 13
+Napoli; Pomodoro, Mozzarella, Acciughe; 4.5, 6, 11
+Natasha; Pomodoro, Mozzarella, Bresaola, Rucola, Burrata a freddo; 6.5, 8, 15
+N''duja; Pomodoro, Mozzarella, N''duja; 4.5, 6, 11
+Neurolaser; Pomodorini, Olive nere, Pancetta affumicata, Mozzarella di bufala; 6.5, 8, 15
+Nicolò; Mozzarella, Prosciutto cotto, Wurstel, Scamorza; 5.5, 7, 13
+Novità; Mozzarella, Gorgonzola, Noci, Pere; 5.5, 7, 13
+Obi; Pomodoro, Mozzarella, Zucchine, Wurstel, Funghi, Grana; 6.5, 8, 15
+Omar; Mozzarella, Funghi, Patatine, Wurstel, Panna; 6, 7.5, 14
+Origanata; Pomodoro, Cipolle, Acciughe, Olive nere, Pecorino; 5.5, 7, 13
+Ornella; Pomodoro, Mozzarella, Gorgonzola, Tonno, Olive verdi piccanti; 6, 7.5, 14
+Ortolana; Pomodoro, Mozzarella, Verdure stufate; 5.5, 7, 13
+Parigina; Pomodoro, Mozzarella, Panna, Prosciutto crudo; 6, 7.5, 14
+Parmigiana; Pomodoro, Mozzarella, Prosciutto cotto, Melanzane fritte, Parmigiano; 6, 7.5, 14
+Pasticciata; Pomodoro, Mozzarella, Salsiccia, Friarielli, Olive verdi, Salamino; 7.5, 9, 17
+Patatosa; Mozzarella, Taleggio, Patatine, Rosmarino; 5.5, 7, 13
+Patty; Pomodoro, Mozzarella, Peperoni, Gorgonzola, Acciughe, Cipolla; 6.5, 8, 15
+Philadelphia; Pomodoro, Mozzarella, Philadelphia, Rucola; 5, 6.5, 12
+Pizza in; Pomodoro, Mozzarella, Salsiccia, Olive, Capperi, Peperoncino; 5.5, 7, 13
+Porcini; Pomodoro, Mozzarella, Funghi porcini; 5.5, 7, 13
+Primavera; Pomodorini, Rucola, Grana; 4.5, 6, 15
+Principessa; Pomodorini, Mozzarella, Zucchini, Gamberetti, Rucola; 6.5, 8, 15
+Prosciutto; Pomodoro, Mozzarella, Prosciutto cotto; 4.5, 6, 11
+Prosciutto e funghi; Pomodoro, Mozzarella, Prosciutto cotto, Funghi; 5, 6.5, 12
+Pugliese; Pomodoro, Mozzarella, Cipolla; 4.5, 6, 11
+Reale; Pomodoro, Mozzarella, Salame affumicato, Philadelphia, Rucola; 5.5, 7, 13
+Regina; Mozzarella, Fontina, Prosciutto cotto, Funghi porcini; 6.5, 8, 15
+Ricottella; Pomodoro, Mozzarella, Ricotta, Rucola; 5.5, 7, 13
+Rosanna; Pomodoro, Aglio, Mozzarella fiordilatte a freddo, Basilico, Acciughe; 5.5, 7, 13
+Rustica; Mozzarella, Scamorza, Pancetta; 5, 6.5, 12
+Salmone; Pomodoro, Mozzarella, Panna, Salmone; 5, 6.5, 12
+Saporita; Mozzarella, Bresaola, Rucola, Parmigiano; 6, 7.5, 14
+Scarola; Pomodoro, Mozzarella, Scarola, Acciughe, Capperi, Olive Taggiasche; 6.5, 8, 15
+Settimo; Pomodoro, Mozzarella, Porcini, Scamorza affumicata, Speck; 6.5, 8, 15
+Sfiziosa; Pomodorini, Mozzarella di bufala, Salsiccia, Rucola; 6.5, 8, 15
+Siciliana; Pomodoro, Mozzarella, Acciughe, Capperi, Olive; 5.5, 7, 13
+Simone; Pomodoro, Mozzarella, Frutti di mare, Salmone affumicato, Prosciutto; 6.5, 8, 15
+Speciale; Pomodoro, Mozzarella, Gamberetti, Rucola; 5.5, 7, 13
+Stefano; Pomodoro, Mozzarella, Verdura, Salsiccia, Bufala; 6.5, 8, 15
+Strana; Pomodoro, Mozzarella, Salsiccia, Pomodorini a freddo, Rucola, Grana; 6.5, 8, 15
+Tartufo; Mozzarella, Crema di tartufo, Funghi, Panna, Speck; 6.5, 8, 15
+Tentatore; Pomodorini, Cotto, Mozzarella di bufala, Rucola; 6, 7.5, 14
+Tentatrice; Pomodoro, Mozzarella, Scamorza, Salame piccante, Prosciutto cotto; 6, 7.5, 14
+Teo; Mozzarella, Olive, Noci, Scaglie di grana; 5, 6.5, 12
+Toni; Pomodoro, Mozzarella, Friarielli, Gorgonzola, N''duja; 6, 7.5, 14
+Tonno e cipolle; Pomodoro, Mozzarella, Tonno, Cipolle; 5, 6.5, 12
+Tropea; Pomodoro, Mozzarella, Gorgonzola, Salame piccante, Cipolle di Tropea; 5.5, 7, 13
+Valdostana; Fontina, Cotto, Mozzarella; 5.5, 7, 13
+Viennese; Pomodoro, Mozzarella, Speck, Brie; 5.5, 7, 13
+Wurstel; Pomodoro, Mozzarella, Wurstel; 4.5, 6, 11
