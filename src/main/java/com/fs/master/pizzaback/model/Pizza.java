@@ -29,13 +29,18 @@ public class Pizza implements Serializable {
     @JoinColumn(name = "fk_pizza", nullable = false)
     private Set<Price> prices;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "fk_pizza_place", nullable = false)
+    private PizzaPlace pizzaPlace;
+
     protected Pizza() {}
 
-    public Pizza(String name) {
+    public Pizza(String name, PizzaPlace pizzaPlace) {
         this.name = name;
         this.toppings = new HashSet<>();
         this.prices = new HashSet<>();
         this.userId = -1;
+        this.pizzaPlace = pizzaPlace;
     }
 
     public long getId() {
@@ -95,5 +100,13 @@ public class Pizza implements Serializable {
 
     public boolean removeTopping(Topping topping) {
         return this.toppings.remove(topping);
+    }
+
+    public PizzaPlace getPizzaPlace() {
+        return pizzaPlace;
+    }
+
+    public void setPizzaPlace(PizzaPlace pizzaPlace) {
+        this.pizzaPlace = pizzaPlace;
     }
 }

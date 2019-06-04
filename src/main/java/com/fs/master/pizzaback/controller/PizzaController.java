@@ -1,10 +1,8 @@
 package com.fs.master.pizzaback.controller;
 
 import com.fs.master.pizzaback.context.PizzaWithToppingsAndUser;
-import com.fs.master.pizzaback.model.Pizza;
-import com.fs.master.pizzaback.model.PizzaSize;
-import com.fs.master.pizzaback.model.Price;
-import com.fs.master.pizzaback.model.Topping;
+import com.fs.master.pizzaback.model.*;
+import com.fs.master.pizzaback.repo.PizzaPlaceRepository;
 import com.fs.master.pizzaback.repo.PizzaRepository;
 import com.fs.master.pizzaback.repo.PriceRepository;
 import com.fs.master.pizzaback.repo.ToppingRepository;
@@ -13,9 +11,13 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 public class PizzaController {
 
+    @Autowired
+    PizzaPlaceRepository pizzaPlaceRepository;
     @Autowired
     PizzaRepository pizzaRepository;
     @Autowired
@@ -23,46 +25,69 @@ public class PizzaController {
     @Autowired
     PriceRepository priceRepository;
 
-    @RequestMapping(value = "/pizzas", method = RequestMethod.POST, produces = "application/json")
+    @RequestMapping(value = "/{pizza_place_tag}/pizzas", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
-    public ResponseEntity postPizza(@RequestBody PizzaWithToppingsAndUser pizzaWithToppingsAndUser) {
-        String name = pizzaWithToppingsAndUser.getName();
-        long[] toppingsIds = pizzaWithToppingsAndUser.getToppingsIds();
-        long userId = pizzaWithToppingsAndUser.getUserId();
+    public ResponseEntity postPizza(
+            @PathVariable("pizza_place_tag") String pizzaPlaceTag,
+            @RequestBody PizzaWithToppingsAndUser pizzaWithToppingsAndUser) {
 
-        if (name != null && !name.isEmpty() && toppingsIds != null && toppingsIds.length != 0) {
-            Pizza pizza = new Pizza(name);
+        List<PizzaPlace> pizzaPlaceList = pizzaPlaceRepository.findByStringTag(pizzaPlaceTag);
+        if (pizzaPlaceList.size() > 0) {
 
-            for (long id : toppingsIds) {
-                Topping topping = toppingRepository.findById(id).orElse(null);
-                if (topping != null) {
-                    pizza.getToppings().add(topping);
+            PizzaPlace pizzaPlace = pizzaPlaceList.get(0);
+            String name = pizzaWithToppingsAndUser.getName();
+            long[] toppingsIds = pizzaWithToppingsAndUser.getToppingsIds();
+            long userId = pizzaWithToppingsAndUser.getUserId();
+
+            if (name != null && !name.isEmpty() && toppingsIds != null && toppingsIds.length != 0) {
+                Pizza pizza = new Pizza(name, pizzaPlace);
+
+                for (long id : toppingsIds) {
+                    toppingRepository.findById(id).ifPresent(topping -> pizza.getToppings().add(topping));
                 }
+
+                System.out.println("got here");
+
+                pizza.setUserId(userId);
+                pizzaRepository.save(pizza);
+
+                return new ResponseEntity<>(pizza, HttpStatus.CREATED);
+            } else {
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
-
-            pizza.setUserId(userId);
-
-            pizzaRepository.save(pizza);
-            return new ResponseEntity<>(pizza, HttpStatus.CREATED);
-        }
-        else {
+        } else {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
 
-    @RequestMapping(value = "/pizzas", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(value = "/{pizza_place_tag}/pizzas", method = RequestMethod.GET, produces = "application/json")
     @ResponseBody
-    public ResponseEntity getPizzas() {
-        // default pizzas have userId = -1
-        Iterable<Pizza> pizzas = pizzaRepository.findByUserId(-1);
-        return new ResponseEntity<>(pizzas, HttpStatus.OK);
+    public ResponseEntity getPizzas(@PathVariable("pizza_place_tag") String pizzaPlaceTag) {
+        List<PizzaPlace> pizzaPlaceList = pizzaPlaceRepository.findByStringTag(pizzaPlaceTag);
+        if (pizzaPlaceList.size() > 0) {
+            PizzaPlace pizzaPlace = pizzaPlaceList.get(0);
+
+            // default pizzas have userId = -1
+            Iterable<Pizza> pizzas = pizzaRepository.findByPlaceAndUserId(pizzaPlace.getId(), -1);
+            return new ResponseEntity<>(pizzas, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
 
-    @RequestMapping(value = "/user_pizzas/{user_id}", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(value = "/{pizza_place_tag}/user_pizzas/{user_id}", method = RequestMethod.GET, produces = "application/json")
     @ResponseBody
-    public ResponseEntity getUserPizzas(@PathVariable("user_id") long user_id) {
-        Iterable<Pizza> pizzas = pizzaRepository.findByUserId(user_id);
-        return new ResponseEntity<>(pizzas, HttpStatus.OK);
+    public ResponseEntity getUserPizzas(
+            @PathVariable("pizza_place_tag") String pizzaPlaceTag,
+            @PathVariable("user_id") long user_id) {
+        List<PizzaPlace> pizzaPlaceList = pizzaPlaceRepository.findByStringTag(pizzaPlaceTag);
+        if (pizzaPlaceList.size() > 0) {
+            PizzaPlace pizzaPlace = pizzaPlaceList.get(0);
+            Iterable<Pizza> pizzas = pizzaRepository.findByPlaceAndUserId(pizzaPlace.getId(), user_id);
+            return new ResponseEntity<>(pizzas, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
 
     @RequestMapping(value = "/pizzas/{id}", method = RequestMethod.GET, produces = "application/json")
