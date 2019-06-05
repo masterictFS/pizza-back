@@ -29,7 +29,7 @@ public class Pizza implements Serializable {
     @JoinColumn(name = "fk_pizza", nullable = false)
     private Set<Price> prices;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne()
     @JoinColumn(name = "fk_pizza_place", nullable = false)
     private PizzaPlace pizzaPlace;
 
